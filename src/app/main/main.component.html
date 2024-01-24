@@ -22,27 +22,7 @@
   </div>
 </div>
 </div>
-
 <div class="body">
-<div id="main2">
-  <div id="shield2">
-    <span *ngFor="let y of stopNumber" class="numberStop" [ngStyle]="{'transform': 'rotate(' + y * 6 + 'deg)'}">
-      {{y}}
-    </span>
-    <div class="center2 hand min" [ngStyle]="{'transform': 'rotate(' + minHand + 'deg)'}" ></div>
-    <div class="center2 hand sec" [ngStyle]="{'transform': 'rotate(' + secHand + 'deg)'}"></div>
-    <div class="center2 hand ms" [ngStyle]="{'transform': 'rotate(' + msHand + 'deg)'}"></div>
-    <div id="center2"></div>
-  </div>
-</div>
-    <div class="date">
-      <div>
-  <p>{{h}}:{{min}}:{{sec}}:{{ms}}</p>
-        <button (click)="start()">START</button>
-        <button (click)="stop()">STOP</button>
-        <button (click)="reset()">RESET</button>
-    </div>
-</div>
-<!--<app-stop.watch></app-stop.watch>--->
+<app-stop-watch></app-stop-watch>
 </div>
 </div>
